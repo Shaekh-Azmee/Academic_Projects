@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
+.chef{
+  background-color: white;
+  font-family: sans-serif;
+}
+.chefh1
+{
+  text-align: center;
+  color:#c69963;
+  background-color: #ffffff;
+  font-family: "Niconne", cursive;
+  font-size:50px;
+}
+
+  .slider{
+  max-width: 700px;
+  border:10px solid  #ffffff;
+  margin:80px auto;
+  position: relative;
+    overflow: hidden;
+
+}
+
+ .chef .slider .left-slide,.chef .slider .right-slide{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #444444;
+  border-radius: 50%;
+  color:#ffffff;
+  font-size: 20px;
+  top:50%;
+  cursor: pointer;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+
+}
+.chef .slider .left-slide:hover,.chef .slider .right-slide:hover{
+ box-shadow: 0px 0px 10px black;
+ background-color: #101D2C;
+}
+
+.chef .slider .left-slide{
+  left: 30px;
+}
+.chef .slider .right-slide{
+  right: 30px;
+}
+.chef .slider .slider-items .item img{
+  max-width: 100%;
+  display: block;
+  animation:zoom 1s ease;
+}
+
+@keyframes zoom{
+  0%{transform: scale(2);opacity: 0}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);opacity:1}
+}
+
+.chef .slider .slider-items .item{
+  display: none;
+  position: relative;
+}
+
+.chef .slider .slider-items .item .caption{
+ width: 100%;
+ height: 60px;
+ bottom: 0px;
+ left: 0px;
+ background-color: rgba(0,0,0,.5);
+ line-height: 60px;
+ text-align: center;
+ color: #ffffff;
+ font-size: 30px;
+ font-family: 'Teko',sans-serif;
+ }
+  .chef .caption a
+ {
+  text-decoration:none;
+  color:#ffffff;
+ }
+
+  .chef .caption a:hover{
+  color:grey;
+ }
+
+  .chef .slider .slider-items .item.active{
+  display: block;
+}

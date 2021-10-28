@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+*
+{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width
+{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+
+}
+
+
+/* navbar styling */
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 30px 0; 
+  font-family: 'Ubuntu',sans-serif;
+  transition: all 0.3s ease;
+
+}
+.navbar.sticky
+{
+  padding: 15px 0;
+  background:linear-gradient(rgba(26, 37, 50, 0.9),rgba(26, 37, 50, 0.9)),url(images/cover.jpg);
+
+}
+
+.navbar .max-width
+{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+
+
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.navbar .logo a span
+{
+  color:rgb(46, 223, 232);
+  transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span
+{
+  color: #fff;
+}
+.navbar .menu li
+{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a
+{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 450;
+  margin-left: 28px;
+  transition: color 0.4s ease; 
+}
+.navbar .menu li a:hover
+{
+  color:#C69963;
+}
+.navbar.sticky li a:hover
+{
+  color: #C69963;
+}
+
+.menu-btn
+{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+
+}
+/* Home section */
+
+.home
+{
+  display: flex;
+  background-image: linear-gradient(rgba(26, 37, 50, 0.9),rgba(26, 37, 50, 0.9)),url(images/cover.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+  align-items: center;
+  min-height: 800px;
+
+}
+.home .max-width
+{
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1
+{
+  margin-left: 30rem;
+  font-size: 30px;
+  color: #fff;
+
+}
+.home .home-content .text-2
+{
+  color: #fff;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: 20rem;
+}
+.home .home-content .text-3
+{
+  color: #fff;
+  font-size: 45px;
+  margin-left: 18rem;
+}
+.home .home-content .text-2 span,
+.home .home-content .text-3 span
+
+{
+  color: #C69963;
+  font-weight: 500;
+}
+.home .home-content a
+{
+  display: inline-block;
+  margin-left: 33rem;
+  background:#C69963;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #C69963;
+  transition: all 0.3s ease;
+
+}
+.home .home-content a:hover
+{
+  color: #fff;
+  background: none;
+  cursor: pointer;
+
+}
+/* all similar styling code */
+section .title
+{
+  
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+
+  font-family: 'Ubuntu',sans-serif;
+
+
+}
+section .title::before
+{
+  content: "";
+  position: absolute;
+  top: 990px;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 4px;
+  background: black;
+  transform: translateX(-50%);
+}
+section .title::after
+{
+  position: absolute;
+  top: 984px;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(46,223,232);
+  padding: 5px 5px;
+  background: #fff;
+  text-align: center;
+  transform: translateX(-50%);
+
+
+}
+
+
+/* about section styling */
+section
+{
+  padding: 100px 0;
+}
+.about, .services, .skills, .teams
+{
+  font-family: 'Poppins',sans-serif;
+
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.about .about-content .left
+{
+  width: 45%;
+}
+
+.about .about-content
+.left img
+{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.about .about-content .right
+{
+  width: 55%;
+}
+.about .about-content .right .text
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span
+{
+  color: #C69963;
+}
+.about .about-content .right p
+{
+  font-weight: 500;
+  text-align: justify;
+} 
+.about .about-content .right a
+{
+  display: inline-block;
+  background:#202932;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #C69963;
+  transition: all 0.3s ease;
+  
+}
+.about .about-content .right a:hover
+{
+  color: #C69963;
+  background: none;
+}
+
+
+
+
+
+  
+/* team section */
+
+
+
+/* contact section */
+
+/* responsive media query start */
+@media(max-width: 1300px)
+{
+  .home .max-width
+  {
+    margin-left: 0px;
+  }
+}
+@media(max-width: 1104px)
+{
+  .about .about-content .column
+  {
+    width: 50%;
+  }
+}
+@media(max-width: 991px)
+{
+  .max-width
+  {
+    padding:0 50px;
+  }
+}
+
+@media (max-width: 947px){
+  .max-width{
+    padding: 0 50px;
+  }
+  
+
+.menu-btn
+  {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before
+  {
+    content: "\f00d";
+
+  }
+  .navbar .menu
+  {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top:0;
+    background: rgb(0,0,0);
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active
+  {
+    left: 0;
+  }
+  .navbar .menu li
+  {
+    display: block;
+
+  }
+  .navbar .menu li a
+  {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  } 
+
+
+
+
+
+
+    .home .home-content .text-2
+  {
+    font-size: 70px;
+  }
+  .home .home-content .text-3
+  {
+    font-size: 40px;
+  }
+  .max-width
+  {
+    max-width: 800px;
+
+  }
+  .about .about-content .column
+  {
+    width: 50%;
+  }
+  .about .about-content .left
+  {
+    display: flex;
+    justify-content:center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right
+  {
+
+    flex:100%;
+  }
+}
+
+@media (max-width: 690px)
+{
+  .home .home-content .text-1
+  {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .home .home-content .text-2
+  {
+    margin-left: 20px;
+    font-size: 50px;
+  }
+  .home .home-content .text-3
+  {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+    .home .home-content a
+    {
+      margin-left: 30px;
+    }
+
+  .about .about-content .column
+  {
+    width: 50%;
+  }
+
+
+}
+
+
+@media (max-width: 1024px)
+{
+  .home .home-content .text-1
+  {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .home .home-content .text-2
+  {
+    margin-left: 20px;
+    font-size: 50px;
+  }
+  .home .home-content .text-3
+  {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+    .home .home-content a
+    {
+      margin-left: 30px;
+    }
+
+  .about .about-content .column
+  {
+    width: 50%;
+  }
+
+
+}

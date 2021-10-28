@@ -1,0 +1,1 @@
+<link rel="icon" href="{{asset('binary/img/core-img/favicon.ico')}}">
